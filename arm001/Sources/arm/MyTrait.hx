@@ -19,8 +19,8 @@ class MyTrait extends iron.Trait {
 			trace("mouse " + "btn" + botton + ":" + x + "," +y);
 		}
 		notifyOnInit(function() {
-			
-			trace("hello from the ");
+			// this -> trait itself; 
+			trace("hello from the " + this.object.name);
 			Keyboard.get().notify(onKeyDown, onKeyUp);
 			Mouse.get().notify(onMouseLeft);
 		});
