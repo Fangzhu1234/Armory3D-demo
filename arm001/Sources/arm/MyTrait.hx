@@ -20,7 +20,7 @@ class MyTrait extends iron.Trait {
 		}
 		notifyOnInit(function() {
 			// this -> trait itself; 
-			trace("hello from the " + this.object.name);
+			trace("hello from the " + object.name);
 			Keyboard.get().notify(onKeyDown, onKeyUp);
 			Mouse.get().notify(onMouseLeft);
 		});
